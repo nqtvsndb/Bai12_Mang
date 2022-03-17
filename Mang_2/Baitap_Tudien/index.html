@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let EL = ['Table','hat','pen','phone','rules'] ;
+    let VN = ['Bàn','mũ','bút','điện thoại','thước'] ;
+    let txt = prompt("Nhập chữ cần tìm : ") ;
+    let DC = EL.indexOf(txt);
+    if (txt == -1) {
+        alert("Không có từ này") ;
+    } else {
+        alert(VN[DC]) ;
+    }
+
+</script>
+</body>
+</html>

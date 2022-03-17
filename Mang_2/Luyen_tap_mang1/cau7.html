@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let clq = [] ;
+  for (let i=0; i < 10;i++) {
+    let a = +prompt("Nhập phần tử thứ : " + i) ;
+    clq.push(a);
+  }
+  let b = +prompt("Nhập vào số cần xóa") ;
+  let c = clq.indexOf(b) ;
+  if (c==-1) {
+      alert("Không có số này") ;
+  } else {
+      clq.splice(c,1);
+      console.log(clq) ;
+  }
+</script>
+</body>
+</html>
